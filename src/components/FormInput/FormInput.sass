@@ -1,0 +1,31 @@
+@import '@/assets/styles/variables'
+
+.form-input
+  display: flex
+  flex-direction: column
+  color: $primary1
+
+  &__label
+    font-size: 13px
+    margin-bottom: 10px
+    font-weight: 600
+    display: flex
+    justify-content: space-between
+
+    span
+      flex: 1
+  &__error
+    text-align: right
+    color: $primary5
+  &__input
+    border-radius: 10px
+    height: 30px
+    font-weight: 600
+    padding: 20px 15px
+    border: 1px solid $neutral2
+    &:focus-visible
+      outline: none
+      border-color: $primary1
+
+    &--error
+      border-color: $primary5
